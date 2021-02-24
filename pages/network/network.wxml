@@ -1,0 +1,41 @@
+<!--pages/network/network.wxml-->
+<view  style="background: white">
+<view class="header">
+<view >{{deviceName}}</view>
+<view class="header_right" bindtap="scanProvisionedNode" >{{connState}}</view>
+</view>
+<scroll-view class="device_list" scroll-y scroll-with-animation>
+    <view wx:for="{{devices}}" wx:key="index"
+          hover-class="weui-grid_active"
+          class="device_contanier"
+          data-data="{{item}}"
+          bindtap="skipNodeConfig"
+    >
+        <view class="device_contanier_left" data-device-id="{{item.bluetoothDeviceAddress}}"
+        >
+            <view style="font-size: 40rpx; color: #333;">{{item.name}}</view>
+
+            <view class="element"
+                  wx:for="{{item.elements}}"
+                  wx:key="index"
+                  wx:for-item="item_elms">
+                <view class="element">
+                    <view style="font-size: 30rpx; color: #333;" class="element_left">
+                        Element:{{item_elms.elementAddress}}
+                    </view>
+                </view>
+            </view>
+
+            <view style="font-size: 30rpx;color: #333;">CompanyId:{{item.page.Company_identifier}}</view>
+        </view>
+    </view>
+</scroll-view>
+<view class="float_bottom_right" bindtap="scanUnprovisonedDevice">
+    <image
+            style="width: 80rpx; height: 80rpx;"
+            mode="aspectFit"
+            src="../../imags/add.png">
+
+    </image>
+</view>
+</view>

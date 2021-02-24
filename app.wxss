@@ -1,0 +1,95 @@
+/**app.wxss**/
+
+@import "weui.wxss";
+.float_top_right {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 16px;
+}
+.float_top_left {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  color: black;
+  font-size: 16px;
+}
+.float_bottom_right {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  font-size: 16px;
+}
+.float_button_bottom_right {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  font-size: 16px;
+}
+.float_button_bottom_left {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  color: black;
+  font-size: 16px;
+}
+.gridview-item_on_off_contain {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-color: #378bff;
+}
+.gridview-item_btn {
+  color: #378bff;
+  margin: 3rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+  border: 1rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.device_list {
+  height: auto;
+  width: auto;
+}
+
+
+.device_contanier {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: start;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #EEE;
+
+}
+
+.device_contanier_left {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+
+.device_contanier_right {
+  display: flex;
+  align-items: center;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

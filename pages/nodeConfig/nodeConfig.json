@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+  },
+  "navigationBarTitleText": "Mesh Demo",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#D0D3D1"
+}

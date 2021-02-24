@@ -1,0 +1,51 @@
+/* pages/modal/common_modal.wxss */
+.mask{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* height: 80%; */
+    background-color: #fff;
+    border-radius: 6rpx;
+}
+
+.modal-btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-top: 2rpx solid rgba(7,17,27,0.1);
+}
+
+.cancel-btn, .confirm-btn{
+    flex: 1;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 32rpx;
+}
+
+.cancel-btn{
+    border-right: 2rpx solid rgba(7,17,27,0.1);
+}
+
+.main-content{
+    flex: 1;
+    height: 100%;
+    overflow-y: hidden;
+}

@@ -1,0 +1,26 @@
+<wxs module="utils">
+    module.exports.max = function(n1, n2) {
+    return Math.max(n1, n2)
+    }
+    module.exports.len = function(arr) {
+    arr = arr || []
+    return arr.length
+    }
+</wxs>
+<scroll-view class="device_list" scroll-y scroll-with-animation>
+    <view wx:for="{{devices}}" wx:key="index"
+          hover-class="weui-grid_active"
+          class="device_contanier">
+        <view class="device_contanier_left"
+              data-device="{{item}}"
+              bindtap="connectDevice">
+            <view style="font-size: 40rpx; color: #333;">{{item.name}}</view>
+<!--            <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>-->
+            <view style="font-size: 20rpx">{{item.deviceId}}</view>
+        </view>
+        <view class="device_contanier_right">{{item.conn_state}}
+            <image class="rssi" src="{{item.image}}"/>
+        </view>
+    </view>
+</scroll-view>
+

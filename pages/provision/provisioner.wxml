@@ -1,0 +1,22 @@
+<!--pages/provision/provisioner.wxml-->
+<scroll-view>
+    <view wx:for="{{provisionStates}}" wx:key="index" class="item">
+        <view class="item_img">
+<!--            <image wx:if="{{item.type==1}}"-->
+<!--                   class="img"-->
+<!--                   src="../../imags/arrow_right.png"-->
+<!--            ></image>-->
+<!--            <image wx:if="{{item.type==0}}"-->
+<!--                   class="img"-->
+<!--                   src="../../imags/arrow_left.png"-->
+<!--            ></image>-->
+
+            <image class="img"
+                   src="{{item.img}}"
+            ></image>
+        </view>
+        <view class="text">
+            {{item.status}}
+        </view>
+    </view>
+</scroll-view>

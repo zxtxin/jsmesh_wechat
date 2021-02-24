@@ -1,0 +1,46 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/network/network",
+    "pages/scanner/scanner",
+    "pages/nodeConfig/nodeConfig",
+    "pages/group/group",
+    "pages/Matrix/Matrix",
+    "pages/Line/line",
+    "pages/provision/provisioner",
+    "pages/QRCode/qrcode",
+    "pages/setting/setting",
+    "pages/scope/scope"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "color": "#B9B9B9",
+    "list": [
+      {
+        "selectedIconPath": "imags/tab_network_select.png",
+        "iconPath": "imags/tab_network_unselect.png",
+        "pagePath": "pages/network/network",
+        "text": "Devices"
+      },
+      {
+        "selectedIconPath": "imags/tab_groups_select.png",
+        "iconPath": "imags/tab_groups_unselect.png",
+        "pagePath": "pages/group/group",
+        "text": "Groups"
+      },
+      {
+        "selectedIconPath": "imags/tab_settings_select.png",
+        "iconPath": "imags/tab_settings_unselect.png",
+        "pagePath": "pages/QRCode/qrcode",
+        "text": "Settings"
+      }
+    ]
+  }
+}

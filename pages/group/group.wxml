@@ -1,0 +1,58 @@
+<!--pages/group/group.wxml-->
+<scroll-view>
+    <view class="gridview" style='background:white;'>
+        <view class="gridview-item" wx:for="{{groups}}" wx:key="name">
+            <view class='gridview-item__bg' data-data="{{item}}" bindlongpress="longTap">
+
+                <view class='gridview-item__txt'>
+                    <image
+                            style="width: 100rpx; height: 100rpx;"
+                            mode="aspectFit"
+                            src="../../imags/light_on.svg"
+                    ></image>
+                    {{item.addressName}}
+                    {{item.address}}
+                    <view>  {{item.deviceCount}} Device(s)</view>
+                    <view class='gridview-item_on_off_contain'>
+                        <view hover-class="weui-grid_active"  class="gridview-item_btn" bindtap="groupSendOn" data-dst="{{item}}">ON</view>
+                        <view  hover-class="weui-grid_active" class="gridview-item_btn" bindtap="groupSendOff" data-dst="{{item}}">OFF</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<view class="float_button_bottom_right" bindtap="onAddGroupClick">
+    <image
+            style="width: 80rpx; height: 80rpx;"
+            mode="aspectFit"
+            src="../../imags/add.png">
+
+    </image>
+</view>
+<Button class="float_button_bottom_left" bindtap="updateIvIndex">
+   UpdateIvIndex
+</Button>
+
+<view wx:if='{{showModals}}'>
+    <view class='mask_layer' bindtap='hiddenModal'/>
+    <view class='modal_box'>
+      <view class="modal_title">Create Group</view>
+        <view  class="modal_lable_continer">
+            <view class="modal_lable_text">Name</view>
+            <input class="modal_lable_input"  type="text" placeholder-class="placeholder_style" placeholder="living Room" bindinput="wacthNameChange" maxlength="20"></input>
+        </view>
+        <view wx:if="{{show_tip_err_name}}" class="tip" >{{errTip.errName}}</view>
+        <view class="modal_lable_continer">
+            <view class="modal_lable_text">Address</view>
+            <view class="OX">0x</view>
+            <input class="modal_lable_input" placeholder-class="placeholder_style" placeholder="c000~FEFF" bindinput="wacthAddressChange" maxlength="4"></input>
+        </view>
+        <view wx:if="{{show_tip_err_address}}" class="tip" >{{errTip.errAddress}}</view>
+        <view  class="modal_submit_btn_container">
+            <view class="modal_submit_btn"  bindtap='onCancel'>cancel</view>
+            <view  class="modal_submit_btn" bindtap='onOk'>ok</view>
+        </view>
+    </view>
+</view>

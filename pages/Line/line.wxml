@@ -1,0 +1,8 @@
+<!--pages/Line/line.wxml-->
+<view  >
+    <canvas canvas-id="canvasline" style="width:{{width}}px; height:{{height}}px; background: "
+            bindtouchstart='onToucthDown'
+            bindtouchmove='onToucthMove'
+            bindtouchend='onToucthUp'
+    ></canvas>
+</view>

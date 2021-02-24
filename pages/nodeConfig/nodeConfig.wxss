@@ -1,0 +1,111 @@
+/* pages/nodeConfig/nodeConfig.wxss */
+.content {
+    height: auto;
+    padding: 16rpx;
+    width: auto;
+}
+
+.element {
+    height: auto;
+    width: auto;
+    padding: 0px 5px;
+    display: flex;
+
+}
+
+.element_left {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.element_left1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    position: absolute;
+    align-self: center;
+}
+
+.onoff_btn {
+    margin: 5px;
+    color: white;
+    font-size: 14px;
+    background: limegreen;
+}
+
+.btn_connect {
+    color: white;
+    font-size: 14px;
+    align-items: flex-end;
+    background: limegreen;
+}
+
+.weui-flex {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.weui-cells {
+    margin-top: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.weui-cells:after, .weui-cells:before {
+    display: none;
+}
+
+.weui-cells_show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.weui-cell:before {
+    right: 15px;
+}
+
+.kind-list__item {
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.kind-list__item:first-child {
+    margin-top: 0;
+}
+
+.kind-list__img {
+    width: 30px;
+    height: 30px;
+}
+
+.kind-list__item-hd {
+    padding: 20px;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.kind-list__item-hd_show {
+    opacity: 0.6;
+}
+
+.kind-list__item-bd {
+    height: 0;
+    overflow: hidden;
+}
+
+.kind-list__item-bd_show {
+    height: auto;
+}
+.item_hover {
+    background: #ecefed;
+    border: 1rpx;
+}

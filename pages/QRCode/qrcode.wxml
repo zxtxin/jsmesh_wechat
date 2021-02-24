@@ -1,0 +1,23 @@
+<!--pages/test/test.wxml-->
+<view class="float_top_right" bindtap="scanQrcode" >
+    <image
+            style="width: 45px; height: 45px;"
+            mode="aspectFit"
+            src="../../imags/scan.png">
+
+    </image>
+</view>
+<button wx:if="{{isBound}}" class="float_top_left" bindtap="unbind"  >
+解绑
+</button>
+<view class="body" open-type="feedback" >
+    <canvas class='canvas' style="width:{{qrcodeWidth}}px; height:{{qrcodeWidth}}px;" canvas-id='canvas' ></canvas>
+    <view class="text_center">扫我即可加入当前网络</view>
+
+</view>
+
+
+
+
+
+

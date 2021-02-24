@@ -1,0 +1,37 @@
+
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{models}}" wx:key="*this">
+                 <view class="weui-grid_colum2">
+                    <image class="weui-grid__icon" src="{{item.img}}"></image>
+                    <view class="weui-grid__label">{{item.elementAddress}}</view>
+                    <view class='gridview-item_on_off_contain'>
+                        <view hover-class="weui-grid_active" class="gridview-item_btn" bindtap="genericOnSet"
+                              data-data="{{item}}">ON
+                        </view>
+                        <view hover-class="weui-grid_active" class="gridview-item_btn" bindtap="genericOffSet"
+                              data-data="{{item}}">OFF
+                        </view>
+                    </view>
+
+                 </view>
+            </block>
+        </view>
+    </view>
+
+    <view class="float_bottom_right">
+        <view hover-class="item_hover" bindtap="nodeReset" style=" padding: 5rpx 15rpx;font-size: 30rpx;color: rgba(203,17,17,0.89); border-radius: 15rpx; background: #e5f1ea">
+            reset
+        </view>
+    </view>
+</view>
+<!--<view>-->
+<!--    <modal bind:cancel="onCancelClick"  bind:sure="onSureClick" sure="{{properties.sure}}" cancel="{{properties.cancel}}" show="{{properties.show}}">-->
+<!--        <view>这里是插入到组件slot中的内容</view>-->
+<!--    </modal>-->
+<!--</view>-->
+
+
+
+

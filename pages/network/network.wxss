@@ -1,0 +1,40 @@
+/* pages/network/network.wxss */
+.header {
+    padding: 2px 15px;
+    display: flex;
+    justify-content:space-between;
+    border-bottom-width: 1px;
+    border-bottom-color: #cad4cd;
+}
+
+.header_right {
+    padding: 4px 8px;
+    background: #c8cbc2;
+    border-radius: 3px;
+}
+
+
+.element {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: auto;
+}
+
+.element_left {
+    flex-direction: row;
+}
+
+.element_right {
+    align-items: flex-end;
+}
+
+.btn_connect {
+    color: white;
+    font-size: 14px;
+    height: 25px;
+    align-self: center;
+    align-content: center;
+    line-height: 25px;
+    background: limegreen;
+}

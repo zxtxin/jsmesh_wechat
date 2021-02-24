@@ -1,0 +1,27 @@
+page {
+    color: #333;
+}
+
+.devices_summary {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.rssi{
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0 auto
+}
+
+
+
+
+
+/*.device_item_hover {*/
+/*    background-color: rgba(0, 0, 0, .1);*/
+/*}*/
+
+

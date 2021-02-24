@@ -1,0 +1,11 @@
+<!--pages/Matrix/Matrix.wxml-->
+<view >
+    <canvas canvas-id="canvas" style="width:{{width}}px; height:{{height}}px;background: "
+    bindtouchstart='onToucthDown'
+    bindtouchmove='onToucthMove'
+    bindtouchend='onToucthUp'
+    ></canvas>
+
+    <!-- <button  bindtap="line" class="onoff_btn">跑马灯</button> -->
+    <button  bindtap="clear" class="onoff_btn">清除(clear)</button>
+</view>
